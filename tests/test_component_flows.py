@@ -88,7 +88,7 @@ class TestCollectorContract(unittest.TestCase):
 class TestCliMainComponent(unittest.TestCase):
     def _args(self, **overrides) -> Namespace:
         base = dict(
-            username="facova.jpg",
+            username="perfilmock",
             user_data_dir=r"C:\perfil",
             output="nao_seguidores.json",
             min_delay=1.0,

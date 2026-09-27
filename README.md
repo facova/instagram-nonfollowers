@@ -96,7 +96,7 @@ C:\Users\SEU_USUARIO\AppData\Local\Google\Chrome\User Data
 Exemplo real:
 
 ```text
-C:\Users\fsodi\AppData\Local\Google\Chrome\User Data
+C:\Users\perfilmock\AppData\Local\Google\Chrome\User Data
 ```
 
 ### Ubuntu
@@ -110,7 +110,7 @@ Use a pasta do perfil do Chrome/Chromium:
 Exemplo real:
 
 ```text
-/home/fsodi/.config/google-chrome/
+/home/perfilmock/.config/google-chrome/
 ```
 
 ### macOS
@@ -124,7 +124,7 @@ Use a pasta do perfil do Chrome:
 Exemplo real:
 
 ```text
-/Users/fsodi/Library/Application Support/Google/Chrome/
+/Users/perfilmock/Library/Application Support/Google/Chrome/
 ```
 
 Se o navegador estiver aberto usando esse perfil, feche todas as janelas antes de rodar.
@@ -136,19 +136,19 @@ Se o navegador estiver aberto usando esse perfil, feche todas as janelas antes d
 **Windows**
 
 ```powershell
-.\.venv\Scripts\python.exe .\instagram_nonfollowers.py --username facova.jpg --user-data-dir "C:\Users\fsodi\AppData\Local\Google\Chrome\User Data"
+.\.venv\Scripts\python.exe .\instagram_nonfollowers.py --username perfilmock --user-data-dir "C:\Users\perfilmock\AppData\Local\Google\Chrome\User Data"
 ```
 
 **Ubuntu**
 
 ```bash
-python instagram_nonfollowers.py --username facova.jpg --user-data-dir "/home/fsodi/.config/google-chrome/"
+python instagram_nonfollowers.py --username perfilmock --user-data-dir "/home/perfilmock/.config/google-chrome/"
 ```
 
 **macOS**
 
 ```bash
-python instagram_nonfollowers.py --username facova.jpg --user-data-dir "/Users/fsodi/Library/Application Support/Google/Chrome/"
+python instagram_nonfollowers.py --username perfilmock --user-data-dir "/Users/perfilmock/Library/Application Support/Google/Chrome/"
 ```
 
 ### 2. Filtrar perfis com mais de 3000 seguidores
@@ -156,19 +156,19 @@ python instagram_nonfollowers.py --username facova.jpg --user-data-dir "/Users/f
 **Windows**
 
 ```powershell
-.\.venv\Scripts\python.exe .\instagram_filter_famous.py --input .\nao_seguidores.json --output .\nao_seguidores_filtrados.json --user-data-dir "C:\Users\fsodi\AppData\Local\Google\Chrome\User Data"
+.\.venv\Scripts\python.exe .\instagram_filter_famous.py --input .\nao_seguidores.json --output .\nao_seguidores_filtrados.json --user-data-dir "C:\Users\perfilmock\AppData\Local\Google\Chrome\User Data"
 ```
 
 **Ubuntu**
 
 ```bash
-python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/home/fsodi/.config/google-chrome/"
+python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/home/perfilmock/.config/google-chrome/"
 ```
 
 **macOS**
 
 ```bash
-python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/Users/fsodi/Library/Application Support/Google/Chrome/"
+python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/Users/perfilmock/Library/Application Support/Google/Chrome/"
 ```
 
 ### 2.1 Alterar o limite do filtro
@@ -176,11 +176,11 @@ python instagram_filter_famous.py --input nao_seguidores.json --output nao_segui
 Se quiser usar outro limite, passe `--threshold`.
 
 ```powershell
-.\.venv\Scripts\python.exe .\instagram_filter_famous.py --input .\nao_seguidores.json --output .\nao_seguidores_filtrados.json --user-data-dir "C:\Users\fsodi\AppData\Local\Google\Chrome\User Data" --threshold 5000
+.\.venv\Scripts\python.exe .\instagram_filter_famous.py --input .\nao_seguidores.json --output .\nao_seguidores_filtrados.json --user-data-dir "C:\Users\perfilmock\AppData\Local\Google\Chrome\User Data" --threshold 5000
 ```
 
 ```bash
-python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/home/fsodi/.config/google-chrome/" --threshold 10000
+python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/home/perfilmock/.config/google-chrome/" --threshold 10000
 ```
 
 ### 3. Remover o follow dos perfis filtrados
@@ -188,19 +188,19 @@ python instagram_filter_famous.py --input nao_seguidores.json --output nao_segui
 **Windows**
 
 ```powershell
-.\.venv\Scripts\python.exe .\instagram_unfollow_selected.py --input .\nao_seguidores_filtrados.json --output .\nunfollow_report.json --user-data-dir "C:\Users\fsodi\AppData\Local\Google\Chrome\User Data"
+.\.venv\Scripts\python.exe .\instagram_unfollow_selected.py --input .\nao_seguidores_filtrados.json --output .\nunfollow_report.json --user-data-dir "C:\Users\perfilmock\AppData\Local\Google\Chrome\User Data"
 ```
 
 **Ubuntu**
 
 ```bash
-python instagram_unfollow_selected.py --input nao_seguidores_filtrados.json --output unfollow_report.json --user-data-dir "/home/fsodi/.config/google-chrome/"
+python instagram_unfollow_selected.py --input nao_seguidores_filtrados.json --output unfollow_report.json --user-data-dir "/home/perfilmock/.config/google-chrome/"
 ```
 
 **macOS**
 
 ```bash
-python instagram_unfollow_selected.py --input nao_seguidores_filtrados.json --output unfollow_report.json --user-data-dir "/Users/fsodi/Library/Application Support/Google/Chrome/"
+python instagram_unfollow_selected.py --input nao_seguidores_filtrados.json --output unfollow_report.json --user-data-dir "/Users/perfilmock/Library/Application Support/Google/Chrome/"
 ```
 
 ## Exemplos com opcoes
@@ -208,31 +208,31 @@ python instagram_unfollow_selected.py --input nao_seguidores_filtrados.json --ou
 ### Rodar sem interface grafica
 
 ```powershell
-.\.venv\Scripts\python.exe .\instagram_nonfollowers.py --username facova.jpg --user-data-dir "C:\Users\fsodi\AppData\Local\Google\Chrome\User Data" --headless
+.\.venv\Scripts\python.exe .\instagram_nonfollowers.py --username perfilmock --user-data-dir "C:\Users\perfilmock\AppData\Local\Google\Chrome\User Data" --headless
 ```
 
 ### Aumentar o intervalo entre rolagens
 
 ```bash
-python instagram_nonfollowers.py --username facova.jpg --user-data-dir "/home/fsodi/.config/google-chrome/" --min-delay 2 --max-delay 5
+python instagram_nonfollowers.py --username perfilmock --user-data-dir "/home/perfilmock/.config/google-chrome/" --min-delay 2 --max-delay 5
 ```
 
 ### Filtrar com passos mais lentos
 
 ```bash
-python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/Users/fsodi/Library/Application Support/Google/Chrome/" --min-delay 2 --max-delay 4
+python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/Users/perfilmock/Library/Application Support/Google/Chrome/" --min-delay 2 --max-delay 4
 ```
 
 ### Filtrar com outro limite de seguidores
 
 ```bash
-python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/Users/fsodi/Library/Application Support/Google/Chrome/" --threshold 8000
+python instagram_filter_famous.py --input nao_seguidores.json --output nao_seguidores_filtrados.json --user-data-dir "/Users/perfilmock/Library/Application Support/Google/Chrome/" --threshold 8000
 ```
 
 ### Rodar o unfollow com mais pausa
 
 ```bash
-python instagram_unfollow_selected.py --input nao_seguidores_filtrados.json --output unfollow_report.json --user-data-dir "/Users/fsodi/Library/Application Support/Google/Chrome/" --min-delay 3 --max-delay 6
+python instagram_unfollow_selected.py --input nao_seguidores_filtrados.json --output unfollow_report.json --user-data-dir "/Users/perfilmock/Library/Application Support/Google/Chrome/" --min-delay 3 --max-delay 6
 ```
 
 ## Saida
